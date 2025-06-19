@@ -6,12 +6,12 @@ class Vehicle {
 		this._manufactureYear = manufactureYear
 	}
 
-	get Year() {
+	get year() {
 		return new Date().getFullYear() - this._manufactureYear
 	}
 
 	getFullInfo() {
-		return `${this._brand} ${this._model} (${this._manufactureYear}) - Year: ${this.Year}, `
+		return `${this._brand} ${this._model} (${this._manufactureYear}) - Year: ${this.year}, `
 	}
 }
 
